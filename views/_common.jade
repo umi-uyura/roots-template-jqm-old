@@ -1,0 +1,27 @@
+!!! 5
+html(lang="ja")
+  head
+    //- meta
+    meta(charset="utf8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+    block header_meta
+      meta(name="description", content="")
+      meta(name="keywords", content="")
+      title= "jQuery Mobile template for Roots"
+
+    //- styles
+    link(rel="stylesheet", href="/css/master.css")
+    link(rel="stylesheet", href="//code.jquery.com/mobile/1.4.0-beta.1/jquery.mobile-1.4.0-beta.1.min.css")
+    block header_styles
+      link(rel="stylesheet", href="/css/index.css")
+
+    //- scripts
+    script(src="//code.jquery.com/jquery-2.0.3.min.js")
+    script(src="/js/jqminit.js")
+    script(src="//code.jquery.com/mobile/1.4.0-beta.1/jquery.mobile-1.4.0-beta.1.min.js")
+    block header_scripts
+      script(src="/js/index.js")
+
+  body
+    block body_content
+      != content
